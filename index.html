@@ -47,6 +47,7 @@
             color: white;
             font-weight: bold;
             width: 100vw;
+            padding-top: 100px;
 
 
 
@@ -57,7 +58,7 @@
 
             #landingJumbotron{
 
-                padding-left: 100px;
+
                 margin: 0px;
 
 
@@ -75,11 +76,11 @@
 
         #headerPicture{
             margin-left:auto;
-   margin-right:auto;
-   margin-top: auto;
-   margin-bottom: auto;
-   display:block;
-   padding-top: 20px;
+            margin-right:auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            display:block;
+            opacity: 80%;
         }
 
         .center-block {
@@ -87,8 +88,7 @@
    margin-right:auto;
    margin-top: auto;
    margin-bottom: auto;
-   display:block;
-}
+   display:block;}
 
     #mainNavBar{
 
@@ -110,6 +110,9 @@
     }
 
     #meAndMyCalculator{
+      float: none;
+display: block; 
+margin: auto; 
     }
 
 
@@ -119,7 +122,7 @@
   </head>
 
   <!-- Add the schollspy as comment in my skeleton -->
-  <body data-spy="scroll" data-target="#navbarDjiwo">
+  <body data-spy="scroll" data-target="#mainNavBar">
     
     <div class="container">
       
@@ -133,14 +136,14 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active px-3">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#jumbotronWrapper">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#download">Download</a>
               </li>
               
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Disabled</a>
+                <a class="nav-link" href="#whyThisApp">Why this app?</a>
               </li>
             </ul>
 
@@ -152,20 +155,20 @@
     
 
     <div id="jumbotronWrapper" class="row align-items-center">
-          <div id="landingJumbotron" class="jumbotron row">
-                <div class="container col-md-7 center-block">
+          <div id="landingJumbotron" class="jumbotron row justify-content-center">
+                <div class="container col-md-4 center-block">
                     <h1 class="font-weight-bold display-4">Crappy calculator</h1>
                     <p class="lead font-weight-bold">Forget brackets - Forget exponents  </p>
                     <hr class="my-4">
                     <p>Go for the crappy experience and install a crappy calculator on your phone</p>
                     <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    <a class="btn btn-primary btn-lg" href="#discover" role="button">Learn more</a>
                     </p>
                 </div>
 
 
-                <div class="container col-md-5 center-block">
-                        <img class='center-block img-fluid' id="headerPicture" src="calc-sharp.jpg" alt="picture of a calculator">
+                <div class="container col-md-4 center-block">
+                        <img class='img-fluid' id="headerPicture" src="calc-sharp.jpg" alt="picture of a calculator">
                         
                 </div>
 
@@ -205,12 +208,12 @@
 
 
               <div class="col-md-6">
-                <a class="badge-link" href="#"><img class="badgeImage" src="google-play-badge.png" alt=""></a>
+                <a class="badge-link" href="#"><img class="badgeImage my-4" src="google-play-badge.png" alt=""></a>
               </div>
 
 
               <div class="col-md-6">
-                <a class="badge-link" href="#"><img class="badgeImage" src="appstore.png" alt=""></a>
+                <a class="badge-link" href="#"><img class="badgeImage my-4" src="appstore.png" alt=""></a>
               </div>
           </div>
 
@@ -223,15 +226,15 @@
       </div>
     </section>
 
-    <section class="bg-dark py-5">
+    <section id="whyThisApp" class="bg-dark py-5">
 
       <div class="container">
         
 
 
-        <div id="whyThisPage" class="row text-white ">
+        <div id="whyThisPage" class="row text-white text-center justify-content-center">
 
-          <div class="col-md-8 text-center">
+          <div class="col-md-8">
             <h2 class="section-heading py-3 pt-3">Why this app?</h2>
           </div>
 
@@ -245,16 +248,16 @@
 
           <div class="row text-white py-5">
           
-            <div class="col-md-5 mx-auto alignFullWidth">
+            <div class="col-md-8 mx-auto alignFullWidth">
             <p class="alignFullWidth">For anyone who wants to use a very basic calculator. <br><br>
-            I originally made this app in my spare time, with my statistics students in mind. They have to use a crappy calculator, exactly like this one, on their exam. This app can help students to get used to working with these old scool calculators</p>
-            The biggest hurdle is working without brackets (Hi there, old-school order of operations!) <br><br>
+            I originally made this app in my spare time, with my statistics students in mind. They have to use a crappy calculator, exactly like this one, on their exam. This app can help students to get used to working with these old scool calculators.
+            <br>The biggest hurdle is working without brackets (Hi there, old-school order of operations!) <br><br>
             Of course, you could just not use the brackets on your fancy calculator. But face it. You're human. And we're not made to resist temptation. If there's ice cream, you'll eat it. Ergo, if there are brackets on your calculator, you'll use them. Save yourself the agony: Use this crappy calculator instead.
+            </p>
             </div>
-            
-            <div class="col-md-4">
-              <img id="meAndMyCalculator" class="center-block img-fluid" src="IMG_20200417_212104.jpg" alt="">
-            </div>
+
+          
+ 
           
           </div>
 
@@ -264,24 +267,6 @@
 
     </section>
 
-
-    <section class="bg-secondary py-5">
-
-      <div class="container">
-        
-        <div class="row text-white">
-
-          <div class="col-md-8 text-center">
-            <h2 class="section-heading py-3 pt-3">About me</h2>
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-    </section>
 
 
 
